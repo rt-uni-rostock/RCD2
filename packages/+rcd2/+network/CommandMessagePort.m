@@ -10,6 +10,6 @@ function udpPort = CommandMessagePort(RCD_ID)
         RCD_ID = uint8(0);
     end
     assert(isreal(RCD_ID) && isscalar(RCD_ID), 'RCD_ID must be real and scalar!');
-    udpPort = uint16(12500) + uint16(uint8(RCD_ID));
+    udpPort = uint16(12200) + uint16(uint8(RCD_ID));
 end
 
